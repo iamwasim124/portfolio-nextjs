@@ -1,0 +1,51 @@
+/* ================================
+   Reset & Box Sizing
+================================ */
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ================================
+   Body
+================================ */
+html, body {
+  width: 100%;
+  scroll-behavior: smooth; /* Smooth scrolling */
+
+}
+
+/* ================================
+   Scrollbar - Chrome, Edge, Safari, Opera
+================================ */
+::-webkit-scrollbar {
+  width: 12px;      /* Vertical scrollbar width */
+  height: 12px;     /* Horizontal scrollbar height */
+}
+
+::-webkit-scrollbar-track {
+  background: #3a3a3a; /* Track color */
+
+}
+
+::-webkit-scrollbar-thumb {
+  background: orangered;             /* Thumb color */
+  border-radius: 8px;
+  border: 3px solid rgba(0,0,0,0); /* Optional padding effect */
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: orangered;             /* Hover effect */
+}
+
+/* ================================
+   Scrollbar - Firefox
+================================ */
+* {
+  scrollbar-width: thin;                       /* "auto" or "thin" */
+  scrollbar-color: orangered #3a3a3a; /* thumb and track */
+}
